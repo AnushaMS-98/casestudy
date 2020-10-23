@@ -10,13 +10,9 @@ public class MenuItemDaoCollectionImplTest {
 	static MenuItemDao menuItemDao = new MenuItemDaoCollectionImpl();
 
 	public static void main(String[] args) {
-		System.out.println("Menu List Admin Printing...");
 		testGetMenuItemListAdmin();
-		System.out.println("Menu List Customer Printing...");
 		testGetMenuListCustomer();
-		System.out.println("Modified Menu and Printing to check...");
 		testModifyMenuItem();
-		System.out.println("Completed.");
 
 	}
 
