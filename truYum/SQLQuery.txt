@@ -1,0 +1,1 @@
+insert into user values(1,'Chandler'),(2,'Joey')(3,'Monica'),4,'Phoebe'),(5,'Rachel'),(6,'Ross');

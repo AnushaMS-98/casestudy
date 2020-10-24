@@ -57,16 +57,20 @@ public class MenuItemDaoCollectionImpl implements MenuItemDao {
 	@Override
 	public void modifyMenuItem(MenuItem menuItem) {
 		// TODO Auto-generated method stub
-		for(MenuItem item:menuItemList) {
-			if(menuItemList.equals(item)) {
-				item.setId(menuItem.getId());
-				item.setName(menuItem.getName());
-				item.setPrice(menuItem.getPrice());
-				item.setActive(menuItem.isActive());
-				item.setDateOfLaunch(menuItem.getDateOfLaunch());
-				item.setCategory(menuItem.getCategory());
-				item.setFreeDelivery(menuItem.isFreeDelivery());
-				item = menuItem;
+		//System.out.println("reach modify");
+		for(MenuItem item1:menuItemList) {
+			//long id1 = item1.getId();
+			if(menuItem.getId()==(item1.getId())) {
+				//System.out.println("inside equals ");
+				item1.setId(menuItem.getId());
+				item1.setName(menuItem.getName());
+				item1.setPrice(menuItem.getPrice());
+				item1.setActive(menuItem.isActive());
+				item1.setDateOfLaunch(menuItem.getDateOfLaunch());
+				item1.setCategory(menuItem.getCategory());
+				item1.setFreeDelivery(menuItem.isFreeDelivery());
+				menuItem=item1;
+				//System.out.println("print"+menuItem);
 			}
 		}menuItemList.add(menuItem);
 		
@@ -81,6 +85,7 @@ public class MenuItemDaoCollectionImpl implements MenuItemDao {
 			}
 		}
 		return null;
+		
 	} 
 	
 

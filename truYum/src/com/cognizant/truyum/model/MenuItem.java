@@ -36,7 +36,7 @@ public class MenuItem {
 		this.name = name;
 	}
 	public float getPrice() {
-		return price;
+		return this.price;
 	}
 	public void setPrice(float price) {
 		this.price = price;
